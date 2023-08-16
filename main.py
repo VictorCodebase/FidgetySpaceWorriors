@@ -1,3 +1,9 @@
+
+#! Apologies - 16/08/2023
+#! I have cancelled this project.
+#! I will son start redeveloping it using flutter
+#! This is due to public demand that it ought to be available on mobile
+
 import pygame;
 import random;
 import Enemies;
