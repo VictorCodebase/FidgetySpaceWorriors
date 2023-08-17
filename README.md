@@ -9,10 +9,10 @@ Flutter seems the best for that
 You can still enjly FidgetySpaceWorriors🥷🏽. 
 
 ## Just:
-Clone the repository to your local machine. 
-Unzip the file and open the folder the files are.
-Open console on the folder and run "python main.py"
-The game should immediately fire up
+• Clone the repository to your local machine.  
+• Unzip the file and open the folder the files are.   
+• Open console on the folder and run "python main.py"   
+• The game should immediately fire up 
 
 # Disclaimer
 Expect a few bugs especially with enemies responsiveness to getting shot
