@@ -1,12 +1,5 @@
 ﻿# FidgetySpaceWorriors
 
- 
-# Hey guys👋🏽🫡🫡
-unfortunately production just stopped. I need to make it available for mobile too. 
-Flutter seems the best for that
-
-## Worry not
-You can still enjly FidgetySpaceWorriors🥷🏽. 
 
 ## Just:
 • Clone the repository to your local machine.  
