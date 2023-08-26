@@ -1,9 +1,3 @@
-
-#! Apologies - 16/08/2023
-#! I have cancelled this project.
-#! I will son start redeveloping it using flutter
-#! This is due to public demand that it ought to be available on mobile
-
 import pygame;
 import random;
 import Enemies;
@@ -70,14 +64,23 @@ Enemy_rects = [];
 for i in range(num_of_enemies):
     EnemyX.append(random.randint(0, screenWidth));
     EnemyY.append(random.randint(50, 150));
-    EnemyX_change.append(0.5 + (i * 0.1));
-
-    Enemy_rect = pygame.Rect(EnemyX[i], EnemyY[i], standardwidth, standardHeight)
+    EnemyX_change.append(0.5 + (i * 0.1));    Enemy_rect = pygame.Rect(EnemyX[i], EnemyY[i], standardwidth, standardHeight)
     Enemy_rects.append(Enemy_rect)
     pygame.draw.rect(screen, (255, 0, 0), Enemy_rects[i], 2)
 
-# EnemyX = random.randint(0, 800);
-# EnemyY = random.randint(50, 150)
+
+VillainArmy = []
+HitCount = []; EnemyLevel = []
+for i in range (num_of_enemies):
+    HitCount.append(0)
+    EnemyLevel.append(1)
+    #! this may be a bad idea; number of enemies loaded shouldnt influence the level of the enemy
+    
+    enemy = Enemies.EnemyMothership(EnemyLevel[i], HitCount[i], screenWidth)
+    VillainArmy.append(enemy)
+    enemy.deploySaucer()
+
+
 
 #! Enemy and player movements
 playerX_change = 0;
@@ -274,7 +277,7 @@ while running:
 
     #! Yooow people!!! Time to get on set!
     player(playerX, playerY, direction);
-    for i in range(num_of_enemies):
-        badGuys(EnemyX[i], EnemyY[i])
+    for i in range (num_of_enemies):
+        VillainArmy[i].controllSaucer()
 
     pygame.display.update();
